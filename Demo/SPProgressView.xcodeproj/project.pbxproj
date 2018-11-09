@@ -15,6 +15,10 @@
 		52AF603D21955F0200232132 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AF603C21955F0200232132 /* main.m */; };
 		52AF604721955F0200232132 /* SPProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AF604621955F0200232132 /* SPProgressViewTests.m */; };
 		52AF605221955F0200232132 /* SPProgressViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AF605121955F0200232132 /* SPProgressViewUITests.m */; };
+		52AF60622195621900232132 /* SPBarProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AF60612195621900232132 /* SPBarProgressView.m */; };
+		52AF606B219576BB00232132 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AF6067219576BB00232132 /* MBProgressHUD.m */; };
+		52AF606C219576BB00232132 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 52AF6068219576BB00232132 /* LICENSE */; };
+		52AF606D219576BB00232132 /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = 52AF606A219576BB00232132 /* README.mdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,12 @@
 		52AF604D21955F0200232132 /* SPProgressViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SPProgressViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AF605121955F0200232132 /* SPProgressViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPProgressViewUITests.m; sourceTree = "<group>"; };
 		52AF605321955F0200232132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52AF60602195621900232132 /* SPBarProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBarProgressView.h; sourceTree = "<group>"; };
+		52AF60612195621900232132 /* SPBarProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBarProgressView.m; sourceTree = "<group>"; };
+		52AF6067219576BB00232132 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		52AF6068219576BB00232132 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		52AF6069219576BB00232132 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		52AF606A219576BB00232132 /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +111,7 @@
 		52AF602C21955F0000232132 /* SPProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				52AF605F219561F700232132 /* SPProgressView */,
 				52AF602D21955F0000232132 /* AppDelegate.h */,
 				52AF602E21955F0000232132 /* AppDelegate.m */,
 				52AF603021955F0000232132 /* ViewController.h */,
@@ -110,6 +121,7 @@
 				52AF603821955F0200232132 /* LaunchScreen.storyboard */,
 				52AF603B21955F0200232132 /* Info.plist */,
 				52AF603C21955F0200232132 /* main.m */,
+				52AF6066219576BB00232132 /* MBProgressHUD */,
 			);
 			path = SPProgressView;
 			sourceTree = "<group>";
@@ -130,6 +142,26 @@
 				52AF605321955F0200232132 /* Info.plist */,
 			);
 			path = SPProgressViewUITests;
+			sourceTree = "<group>";
+		};
+		52AF605F219561F700232132 /* SPProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				52AF60602195621900232132 /* SPBarProgressView.h */,
+				52AF60612195621900232132 /* SPBarProgressView.m */,
+			);
+			path = SPProgressView;
+			sourceTree = "<group>";
+		};
+		52AF6066219576BB00232132 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				52AF6068219576BB00232132 /* LICENSE */,
+				52AF6069219576BB00232132 /* MBProgressHUD.h */,
+				52AF6067219576BB00232132 /* MBProgressHUD.m */,
+				52AF606A219576BB00232132 /* README.mdown */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +269,9 @@
 			files = (
 				52AF603A21955F0200232132 /* LaunchScreen.storyboard in Resources */,
 				52AF603721955F0200232132 /* Assets.xcassets in Resources */,
+				52AF606C219576BB00232132 /* LICENSE in Resources */,
 				52AF603521955F0000232132 /* Main.storyboard in Resources */,
+				52AF606D219576BB00232132 /* README.mdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +298,9 @@
 			files = (
 				52AF603221955F0000232132 /* ViewController.m in Sources */,
 				52AF603D21955F0200232132 /* main.m in Sources */,
+				52AF606B219576BB00232132 /* MBProgressHUD.m in Sources */,
 				52AF602F21955F0000232132 /* AppDelegate.m in Sources */,
+				52AF60622195621900232132 /* SPBarProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +472,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MP8K63J94Y;
 				INFOPLIST_FILE = SPProgressView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +489,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MP8K63J94Y;
 				INFOPLIST_FILE = SPProgressView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
