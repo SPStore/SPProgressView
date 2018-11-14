@@ -22,8 +22,8 @@
         _lineWidth = 2.f;
         _progress = 0.f;
         _lineColor = [UIColor whiteColor];
-        _progressColor = [UIColor whiteColor];
-        _progressRemainingColor = [UIColor clearColor];
+        _progressColor = [UIColor blackColor];
+        _progressRemainingColor = [UIColor lightGrayColor];
         _intrinsicContentSize = CGRectEqualToRect(frame, CGRectZero) ? CGSizeMake(120, 10) : frame.size;
         self.backgroundColor = [UIColor clearColor];
         self.opaque = NO;
